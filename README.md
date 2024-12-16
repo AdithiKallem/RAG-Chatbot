@@ -10,34 +10,40 @@ This project established the groundwork for a six-month pilot of a Generative AI
 ### 6-Month pilot task 
 
 Rebuild the Kendra RAG Intelligent Search Index
+
 Rebuild the AWS OnABot Environment
+
 Upgrade the LLM to Anthropic Claude 3.5 Sonnet
+
 Update the Chatbot Interface with GMU Branding
+
 Modify the Prompt Engineering prompt passed to the LLM
+
 Perform Unit Testing to Evaluate the Quality of LLM Responses
+
 Collaborate with MSSC and ITS to define the Test Plan for the 6-month Pilot
 
 ### Estimated Costs for the 6-Month Pilot
 
 Average Monthly Cost: $989.43
-6-Month Total Estimate: Up to $5,940
 
-# Cost Breakdown:
+6-Month Total Estimate: Up to $5,940
+Cost Breakdown:
 
 Amazon Kendra: Fixed cost of $27/day (~$810/month).
 This accounts for a significant portion of the expenses, as AWS Kendra Intelligent Search incurs a minimum charge even when not in use.
+
 Other Services: Variable costs based on usage, including:
 Token processing for the LLM via AWS Bedrock,Search queries on Amazon Kendra and Backend services like AWS Lambda and Amazon S3.
 The average daily cost was $34, highlighting the dominance of fixed costs while leaving room for variability based on usage and system activity.
 
-
 ### Challenges faced 
 
-# Rebuilding the environment
+### Rebuilding the environment
 ⁠IAM ACCESS ISSUES - requires full administrative rights to deploy the cloud formation stack.
 ⁠Redesign of the June 2024 QnABot cloud formation stack.
 Reorganization the content designer settings.
-# Unit testing
+### Unit testing
 A requirement of the project was to evaluate the quality of LLM responses.
 The initial tool selected, RefChecker, was not designed to work in a QnAbot solution architecture.
 Bedrock LLM model evaluation tool is intended to evaluate different LLM models and was unsuitable to evaluate the quality of the LLM responses.
